@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Invitation</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="invite_header">Wedding Invitation</string>
+    <string name="omGanesha">Om Ganeshaya Namaha</string>
+    <string name="invite_txt">Union of two unknown souls written right from birth, on the rotating wheels of life. \n
+        The time has come for two hearts to get close together to share every moment of their life.
+    </string>
+    <string name="family1">Mr. T. Kannan &amp; Mrs. K. Nirmala </string>
+    <string name="family2">Mr. S. Vairamuthu &amp; Mrs. V. MuthuLakshmi </string>
+    <string name="jointInvite">jointly invites you and your family  for the wedding occasion of </string>
+    <string name="bride_name">K. Janani B.Com(Hons.), MBA.,</string>
+    <string name="groom_name">V. Muthuraj B.Tech.,</string>
+    <string name="groom_occupation">(Engineer, Mill india Pvt. Ltd., Noida)</string>
+    <string name="wedding_hall">Ramadhari Marriage Hall </string>
+    <string name="wedding_addr">Rajaplayam</string>
+    <string name="reception_hall">Sri GanagaRam Hall</string>
+    <string name="reception_addr">No.53, Arcot Road, Kodambakkam</string>
+    <string name="reception_city">Chennai - 600 024</string>
+    <string name="reception_time">between 7.00 p.m. and 9.00 p.m.</string>
+    <string name="reception_date">On Friday,9th February 2018</string>
+    <string name="wedding_date">On Sunday,4th February 2018</string>
+
+
+</resources>
