@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "735000862999",
+    "firebase_url": "https://invitation-ganapathy.firebaseio.com",
+    "project_id": "invitation-ganapathy",
+    "storage_bucket": "invitation-ganapathy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735000862999:android:e383b5d137dbd845",
+        "android_client_info": {
+          "package_name": "com.prabhu.invitation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735000862999-0rjh74brigefdt4gv7psg4b87h54h8og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGcZvaeNKQb9vwfxlyC-lKgNRrrVkgpm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

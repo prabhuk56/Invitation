@@ -9,9 +9,11 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="black_overlay">#66000000</color>
-    <color name="text_color_primary">#ceb000</color>
-    <color name="gradient_start">#2af598</color>
-    <color name="gradient_end">#ffffff</color>
+    <!--<color name="text_color_primary">#ceb000</color>-->
+    <color name="text_color_primary">#ffffff</color>
+    <color name="gradient_start">#c94b4b</color>
+    <color name="gradient_middle">#FF8C00</color>
+    <color name="gradient_end">#4b134f</color>
 </resources>
     <!--
     <?xml version="1.0" encoding="utf-8"?>
