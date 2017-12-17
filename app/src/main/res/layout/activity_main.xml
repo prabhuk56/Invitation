@@ -13,18 +13,57 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+
+            >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Invitation"
                 android:fontFamily="@font/great_vibes"
+                android:text="Invitation"
+                android:textAlignment="center"
                 android:textColor="@color/text_color_primary"
-                android:textSize="52sp"/>
+                android:textSize="52sp" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/omGanesha"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/headerTxt"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/family1"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/and"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/family2"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/great_vibes"
                 android:text="@string/invite_txt"
@@ -32,11 +71,171 @@
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
                 />
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/great_vibes"
+                    android:text="@string/groom_name"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/paraTxt"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/great_vibes"
+                    android:text="@string/groom_degree"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/smallTxt"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/great_vibes"
-                android:text="@string/invite_txt"
+                android:text="@string/groom_occupation"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/headerTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/with"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/great_vibes"
+                    android:text="@string/bride_name"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/paraTxt"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/great_vibes"
+                    android:text="@string/bride_degree"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/smallTxt"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/groom_name"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/muhurtham"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/wedding_date"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/wedding_hall"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/wedding_addr"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/reception"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/reception_date"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/reception_time"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/reception_hall"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/reception_addr"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/paraTxt"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/reception_city"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
