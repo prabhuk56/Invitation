@@ -14,30 +14,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:layout_margin="4dp"
             >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="Invitation"
                 android:textAlignment="center"
                 android:textColor="@color/text_color_primary"
+                android:visibility="gone"
                 android:textSize="52sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/omGanesha"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/headerTxt"
-
+                android:padding="5dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_bolditalic"
                 android:text="@string/family1"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -46,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/and"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -55,7 +57,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_bolditalic"
                 android:text="@string/family2"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -64,7 +66,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/invite_txt"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -78,7 +80,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/great_vibes"
+                    android:fontFamily="@font/lobstertwo_bolditalic"
                     android:text="@string/groom_name"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/paraTxt"
@@ -87,7 +89,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/great_vibes"
+                    android:fontFamily="@font/lobstertwo_regular"
                     android:text="@string/groom_degree"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/smallTxt"
@@ -98,7 +100,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/groom_occupation"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/headerTxt"
@@ -107,7 +109,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/with"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -121,7 +123,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/great_vibes"
+                    android:fontFamily="@font/lobstertwo_bolditalic"
                     android:text="@string/bride_name"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/paraTxt"
@@ -130,7 +132,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/great_vibes"
+                    android:fontFamily="@font/lobstertwo_regular"
                     android:text="@string/bride_degree"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/smallTxt"
@@ -141,26 +143,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
-                android:text="@string/groom_name"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/paraTxt"
-                android:textAlignment="center"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/muhurtham"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
                 android:textStyle="bold"
+                android:padding="5dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/wedding_date"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -169,7 +163,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/wedding_hall"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -178,26 +172,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/wedding_addr"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
+                android:padding="5dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/reception"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
                 android:textStyle="bold"
+                android:padding="5dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/reception_date"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -206,7 +202,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/reception_time"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -215,7 +211,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/reception_hall"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -224,7 +220,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/reception_addr"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
@@ -233,7 +229,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/great_vibes"
+                android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/reception_city"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"

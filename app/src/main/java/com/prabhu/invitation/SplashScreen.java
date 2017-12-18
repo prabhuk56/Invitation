@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.widget.ImageView;
 
 /**
  * Created by prabhu on 17-12-2017.
@@ -17,6 +18,8 @@ public class SplashScreen extends Activity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
+        ImageView splashImage = findViewById(R.id.imgSplash);
+        splashImage.setAlpha((float)0.2);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
