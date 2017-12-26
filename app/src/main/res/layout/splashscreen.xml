@@ -8,14 +8,14 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/splashimage"
+            android:background="@drawable/welcome"
             android:id="@+id/imgSplash"
             android:contentDescription="Welcome"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/great_vibes"
-            android:text=" Wedding Invite  "
+            android:text="@string/wedding_invite"
             android:textAlignment="center"
             android:textColor="@color/text_color_primary"
             android:layout_centerVertical="true"
