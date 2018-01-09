@@ -4,11 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_gradient"
+
     >
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +38,7 @@
                 android:fontFamily="@font/lobstertwo_regular"
                 android:text="@string/omGanesha"
                 android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/headerTxt"
+                android:textSize="@dimen/initialTxt"
                 android:padding="5dp"
                 />
             <TextView
@@ -74,6 +76,8 @@
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -180,7 +184,7 @@
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/paraTxt"
                 android:textAlignment="center"
-                android:padding="5dp"
+
                 />
             <TextView
                 android:layout_width="match_parent"

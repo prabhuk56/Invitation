@@ -4,36 +4,42 @@
     tools:showIn="navigation_view"
     >
 
-    <group android:checkableBehavior="single">
+    <group >
         <item
             android:id="@+id/invite_wedding"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Invite" />
-        <item
+            android:icon="@drawable/ic_email_black"
+            android:title="You're Specially Invited" />
+        <!--<item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Gallery" />-->
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_map_black"
-            android:title="Map">
+            android:title="We'll Guide You To Reach">
             <menu>
                 <item
                     android:id="@+id/map_reception"
-                    android:title="Reception"/>
+                    android:icon="@drawable/ic_map_black"
+                    android:title="Reception" />
 
                 <item
                     android:id="@+id/map_wedding"
-                    android:title="Wedding"/>
+                    android:icon="@drawable/ic_newlyweds"
+                    android:title="Wedding" />
 
             </menu>
+        </item>
+        <item
+            android:id="@+id/id_save_date"
+            android:icon="@drawable/ic_save_date"
+            android:title="Save the date">
         </item>
 
        <!-- <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />-->
-    </group>
+
 
 <!--    <item android:title="Communicate">
         <menu>
@@ -47,5 +53,5 @@
                 android:title="Send" />
         </menu>
     </item>-->
-
+    </group>
 </menu>

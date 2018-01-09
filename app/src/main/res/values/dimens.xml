@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="headerTxt">10sp</dimen>
+    <dimen name="initialTxt">13sp</dimen>
     <dimen name="smallTxt">15sp</dimen>
     <dimen name="paraTxt">20sp</dimen>
     <dimen name="headingsTxt">20sp</dimen>

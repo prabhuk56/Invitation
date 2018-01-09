@@ -1,7 +1,10 @@
 package com.prabhu.invitation;
 
 import android.app.Fragment;
+import android.content.ContentValues;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -15,6 +18,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.prabhu.invitation.Fragments.HomeFragment;
+
+import java.util.Calendar;
 
 public class NavigationActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -96,18 +101,19 @@ public class NavigationActivity extends AppCompatActivity
                 Toast.makeText(getApplicationContext(),"Invitation loaded",Toast.LENGTH_SHORT).show();
                 setNewFragment(new HomeFragment(),false);
                 break;
+
             default:
                 setNewFragment(new HomeFragment(),false);
                 break;
         }
-        if (id == R.id.invite_wedding) {
+        /*if (id == R.id.invite_wedding) {
             Toast.makeText(getApplicationContext(),"Home is clicked",Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.nav_gallery) {
+        } *//*else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        }*//* else if (id == R.id.id_save_date) {
 
-        }
+        }*/
 
         return true;
     }
@@ -118,4 +124,5 @@ public class NavigationActivity extends AppCompatActivity
         if (addToBackStack) transaction.addToBackStack(fragment.getClass().getName());
         transaction.commit();
     }
+
 }

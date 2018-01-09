@@ -1,8 +1,10 @@
 package com.prabhu.invitation;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -16,6 +18,8 @@ import android.widget.Toast;
 import com.crashlytics.android.Crashlytics;
 import com.prabhu.invitation.Fragments.InviteFragment;
 import com.prabhu.invitation.base.BaseActivity;
+
+import java.util.Calendar;
 
 import io.fabric.sdk.android.Fabric;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
@@ -37,11 +41,14 @@ public class MainActivity extends BaseActivity {
         );
 
         //setContentView(R.layout.activity_main);
+        setTitle("You're Specially Invited");
         setContentView(R.layout.activity_navigation);
         setNewFragment(new InviteFragment(), false);
         //initializing Toolbar
         toolbar=(Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         // Initializing NavigationView
         navigationView=(NavigationView) findViewById(R.id.nav_view);
@@ -76,6 +83,11 @@ public class MainActivity extends BaseActivity {
                                 geoLatitude="9.4544263";
                                 geoLongitude="77.5551582";
                                 launchGoogleMaps(geoLatitude,geoLongitude);
+                                break;
+                            case R.id.id_save_date:
+                                Toast.makeText(getApplicationContext(),"Save Date Launch",Toast.LENGTH_SHORT).show();
+                                createReminder("Wedding","V.MuthuRaj weds K.Janani",2018,02,04,06,00,2018,02,04,10,00);
+                                createReminder("Reception","V.MuthuRaj weds K.Janani",2018,02,9,18,00,2018,02,04,21,00);
                                 break;
                             default:
                                 setNewFragment(new InviteFragment(),false);
@@ -112,8 +124,9 @@ public class MainActivity extends BaseActivity {
     }
     @Override public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_navigation_drawer, menu);
-        return true;
+       /* getMenuInflater().inflate(R.menu.activity_navigation_drawer, menu);
+        return true;*/
+       return false;
     }
 
     @Override public boolean onOptionsItemSelected(MenuItem item) {
@@ -137,5 +150,44 @@ public class MainActivity extends BaseActivity {
         startActivity(mapIntent);
 
 
+    }
+    public void createReminder(String title,String description,int startYear, int startMonth, int startDay, int startHour, int startMinut, int endYear, int endMonth, int endDay, int endHour, int endMinuts){
+        Calendar beginTime = Calendar.getInstance();
+        beginTime.set(startYear, startMonth, startDay, startHour, startMinut);
+        long startMillis = beginTime.getTimeInMillis();
+
+        Calendar endTime = Calendar.getInstance();
+        endTime.set(endYear, endMonth, endDay, endHour, endMinuts);
+        long endMillis = endTime.getTimeInMillis();
+
+        String eventUriString = "content://com.android.calendar/events";
+        ContentValues eventValues = new ContentValues();
+
+        eventValues.put(CalendarContract.Events.CALENDAR_ID, 1);
+        eventValues.put(CalendarContract.Events.TITLE, title);
+        eventValues.put(CalendarContract.Events.DESCRIPTION, description);
+        eventValues.put(CalendarContract.Events.EVENT_TIMEZONE, "IST");
+        eventValues.put(CalendarContract.Events.DTSTART, startMillis);
+        eventValues.put(CalendarContract.Events.DTEND, endMillis);
+
+        //eventValues.put(Events.RRULE, "FREQ=DAILY;COUNT=2;UNTIL="+endMillis);
+        eventValues.put("eventStatus", 1);
+        //eventValues.put("visibility", 3);
+        //eventValues.put("transparency", 0);
+        eventValues.put(CalendarContract.Events.HAS_ALARM, 1);
+
+        Uri eventUri = getContentResolver().insert(Uri.parse(eventUriString), eventValues);
+        long eventID = Long.parseLong(eventUri.getLastPathSegment());
+
+        /***************** Event: Reminder(with alert) Adding reminder to event *******************/
+
+        String reminderUriString = "content://com.android.calendar/reminders";
+
+        ContentValues reminderValues = new ContentValues();
+        reminderValues.put("event_id", eventID);
+        reminderValues.put("minutes", 1);
+        reminderValues.put("method", 1);
+
+        Uri reminderUri = getContentResolver().insert(Uri.parse(reminderUriString), reminderValues);
     }
 }
