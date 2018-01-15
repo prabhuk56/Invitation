@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#021274</color>
-    <color name="primaryLightColor">#473aa4</color>
-    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="colorPrimary">#c94b4b</color>
+    <color name="primaryLightColor">#FF4081</color>
+    <color name="colorPrimaryDark">#FF4081</color>
     <color name="colorPrimaryText">#d6b800</color>
     <color name="primaryColor">#3F51B5</color>
     <color name="primaryDarkColor">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay">#ffffff</color>
+
     <!--<color name="text_color_primary">#ceb000</color>-->
     <color name="text_color_primary">#ffffff</color>
     <color name="gradient_start">#c94b4b</color>
     <color name="gradient_middle">#FF8C00</color>
     <color name="gradient_end">#4b134f</color>
+    <color name="accent_translucent">#c5cde4e9</color>
 </resources>
     <!--
     <?xml version="1.0" encoding="utf-8"?>

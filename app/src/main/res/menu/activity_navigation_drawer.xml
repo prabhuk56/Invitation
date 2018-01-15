@@ -8,7 +8,8 @@
         <item
             android:id="@+id/invite_wedding"
             android:icon="@drawable/ic_email_black"
-            android:title="You're Specially Invited" />
+            android:title="You're Specially Invited"
+            />
         <!--<item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"

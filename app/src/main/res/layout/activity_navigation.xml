@@ -25,7 +25,7 @@
         app:menu="@menu/activity_navigation_drawer"
         android:background="@drawable/background_gradient"
         app:itemTextColor="@color/text_color_primary"
-
+        app:itemIconTint="@color/text_color_primary"
         />
 
 </android.support.v4.widget.DrawerLayout>

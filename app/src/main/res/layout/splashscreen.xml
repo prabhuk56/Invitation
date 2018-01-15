@@ -10,15 +10,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/welcome"
             android:id="@+id/imgSplash"
-            android:contentDescription="Welcome"/>
+            android:contentDescription="@string/wedding_invite"
+            />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/great_vibes"
             android:text="@string/wedding_invite"
             android:textAlignment="center"
             android:textColor="@color/text_color_primary"
             android:layout_centerVertical="true"
-            android:textSize="@dimen/headingsTxt" />
+            android:id="@+id/txtSplash"
+            android:textSize="@dimen/splashTxt"
+            />
 
     </RelativeLayout>

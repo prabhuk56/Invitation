@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "735000862999-qk0r9jam9v32n7a3stcq0m2upq0gavab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prabhu.invitation",
+            "certificate_hash": "53867ea2b7a2a6fe0807ed131611e3fe9ada6549"
+          }
+        },
+        {
           "client_id": "735000862999-0rjh74brigefdt4gv7psg4b87h54h8og.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735000862999-0rjh74brigefdt4gv7psg4b87h54h8og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
