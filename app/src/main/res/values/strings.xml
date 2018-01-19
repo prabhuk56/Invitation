@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Invitation</string>
+    <string name="app_name">Special Invite</string>
     <!--<string name="google_app_id">1:735000862999:android:e383b5d137dbd845</string>-->
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -19,7 +19,7 @@
     <string name="groom_degree"> B.Tech.,</string>
     <string name="groom_occupation">(Engineer, MIL India Pvt. Ltd., Noida)</string>
     <string name="wedding_hall">Ramadhari Marriage Hall, </string>
-    <string name="wedding_addr">Rajaplayam.</string>
+    <string name="wedding_addr">Rajapalayam.</string>
     <string name="reception_hall">Sri GangaRam Hall,</string>
     <string name="reception_addr">No.53, Arcot Road, Kodambakkam,</string>
     <string name="reception_city">Chennai - 600 024.</string>

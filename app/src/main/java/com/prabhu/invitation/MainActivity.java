@@ -295,7 +295,7 @@ public class MainActivity extends BaseActivity {
     private void eventCreation(){
         String wedLocation=getString(R.string.wedding_hall) + getString(R.string.wedding_addr);
         String recepLocation=getString(R.string.reception_hall) + getString(R.string.reception_addr) +getString(R.string.reception_city);
-        createReminder("Wedding", "V.MuthuRaj Weds K.Janani", 2018, 1, 4, 06, 00, 2018, 1, 4, 10, 00,wedLocation);
+        createReminder("Wedding Ceremony", "V.MuthuRaj Weds K.Janani", 2018, 1, 4, 06, 00, 2018, 1, 4, 10, 00,wedLocation);
         createReminder("Wedding Reception", "V.MuthuRaj Weds K.Janani", 2018, 1, 9, 18, 00, 2018, 1, 9, 21, 00,recepLocation);
     }
 
